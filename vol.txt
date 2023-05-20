@@ -1,0 +1,3 @@
+docker volume create app-data
+
+docker run -it -p 5001:5001 -v app-data:/app pythonapp-alpine:latest
